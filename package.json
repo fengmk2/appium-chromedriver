@@ -28,17 +28,18 @@
     "adm-zip": "^0.4.7",
     "appium-jsonwp-proxy": "^1.1.0",
     "appium-logger": "^1.0.0",
-    "appium-support": "^1.1.0",
+    "appium-support": "^2.0.10",
     "asyncbox": "^2.0.2",
     "babel-runtime": "5.5.5",
     "is-os": "^1.0.0",
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.5",
     "ps-node": "^0.0.4",
     "q": "^1.2.0",
     "request": "^2.55.0",
     "rimraf": "^2.3.3",
     "source-map-support": "^0.3.1",
-    "through": "^2.3.7"
+    "through": "^2.3.7",
+    "snyk": "^1.88.2"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
@@ -46,7 +47,9 @@
     "watch": "gulp",
     "install": "node install-npm.js",
     "chromedriver": "node install-npm.js",
-    "chromedriver_all": "node install-npm.js --all"
+    "chromedriver_all": "node install-npm.js --all",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "appium-gulp-plugins": "^1.1.0",
@@ -55,5 +58,6 @@
     "gulp": "^3.8.11",
     "mocha": "^2.2.1",
     "mochawait": "^2.0.0"
-  }
+  },
+  "snyk": true
 }

@@ -38,15 +38,17 @@
     "request": "^2.55.0",
     "rimraf": "^2.3.3",
     "source-map-support": "^0.3.1",
-    "through": "^2.3.7"
+    "through": "^2.3.7",
+    "snyk": "^1.192.3"
   },
   "scripts": {
-    "prepublish": "gulp prepublish",
+    "prepublish": "npm run snyk-protect; gulp prepublish",
     "test": "gulp once",
     "watch": "gulp",
     "install": "node install-npm.js",
     "chromedriver": "node install-npm.js",
-    "chromedriver_all": "node install-npm.js --all"
+    "chromedriver_all": "node install-npm.js --all",
+    "snyk-protect": "snyk protect"
   },
   "devDependencies": {
     "appium-gulp-plugins": "^1.1.0",
@@ -55,5 +57,6 @@
     "gulp": "^3.8.11",
     "mocha": "^2.2.1",
     "mochawait": "^2.0.0"
-  }
+  },
+  "snyk": true
 }

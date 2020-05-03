@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - asyncbox > lodash:
+        patched: '2020-05-03T08:32:55.101Z'
+    - appium-jsonwp-proxy > appium-support > lodash:
+        patched: '2020-05-03T08:32:55.101Z'
+    - appium-jsonwp-proxy > appium-support > teen_process > lodash:
+        patched: '2020-05-03T08:32:55.101Z'
+    - ps-node > table-parser > @semantic-release/git > lodash:
+        patched: '2020-05-03T08:32:55.101Z'
+    - appium-jsonwp-proxy > appium-support > archiver > async > lodash:
+        patched: '2020-05-03T08:32:55.101Z'
+    - appium-jsonwp-proxy > appium-support > request-promise > request-promise-core > lodash:
+        patched: '2020-05-03T08:32:55.101Z'

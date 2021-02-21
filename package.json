@@ -25,7 +25,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "adm-zip": "^0.4.7",
+    "adm-zip": "^0.5.2",
     "appium-jsonwp-proxy": "^1.1.0",
     "appium-logger": "^1.0.0",
     "appium-support": "^1.1.0",
